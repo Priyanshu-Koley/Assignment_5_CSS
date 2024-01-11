@@ -1,0 +1,602 @@
+/* Color codes and font family variables */
+:root{
+    --blue_0:#ddf0ff;
+    --blue_1:#1095ff;
+    --blue_2:#4c8aff;
+    --blue_3:#0780e0;
+    --green_1:#68edb6;
+    --green_2:#00bc6e;
+    --green_3:#009f7b;
+    --green_4:#019558;
+    --pink:#ff4cf5;
+    --yellow:#ffc31b;
+    --grey:#515151;
+    --nav_black:#212529;
+    --font_family:'Lucida Sans', sans-serif;
+    --font_regular: 400;
+    --font_bold: 600;
+    --font_extraBold: 800;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font_family);
+    font-weight: var(--font_regular);
+    
+}
+/* Buttons */
+.btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px 10px 10px;
+    cursor: pointer;
+}
+/* NAVBAR */
+.header{
+    background-color: var(--nav_black);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    width: 85%;
+}
+.header .nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 12px 0px;
+}
+.nav-links{
+    display: flex;
+}
+
+.nav-link,
+.nav-logo{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+    transition: all 0.6s;
+    border-radius: 5px;
+    padding: 8px 7px;
+    margin: 0px 2px 0px 2px;
+}
+.show-menu,
+.close-menu{
+    background:transparent;
+    color: #a8a6a6;
+    border: 1px solid #474747;
+    border-radius: 3px;
+    display: none;
+    margin: 0px 0px 0px 0px;
+    width: 25px;
+    height: 25px;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+/* FIRST CONTAINER */
+.container-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue_0);
+}
+/* First Section */
+.first{
+    display: flex;
+    width: 85%;
+    padding: 50px 0px;
+}
+/* First left section */
+.first-left{
+    width:60%
+}
+
+/* First left section heading */
+.first .first-left .heading-1{
+    font-size: 31px;
+    margin: 0px;
+}
+/* First left section paragraphs */
+.first .first-left .para-1, 
+.first .first-left .para-2{
+    color: var(--nav_black);
+    font-size: 15px;
+    margin: 10px 20px 10px 0px;
+    line-height: 20px;
+}
+/* First button */
+.btn-1{
+    background-color: var(--blue_1);
+}
+/* First button arrow */
+.arrow-1{
+    opacity: 0%;
+    transition: all 0.6s;
+    position: absolute;
+    transform: translateX(-3px);
+}
+/* Animate arrow on hover */
+.btn-1:hover .arrow-1{
+    transform: translateX(4px);
+    opacity: 100%;
+}
+/* Change bg color of button on hover */
+.btn-1:hover{
+    background-color: var(--blue_3);
+}
+
+/* First right section */
+.first-right{
+    width:40%
+}
+/* First right section image */
+.first .first-right .image-container img{
+    width: 100%;
+    height: 343px;
+    transition: all 0.6s;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+/* Shadow hovering the image */
+.first .first-right .image-container img:hover{
+    box-shadow: 5px 5px 7px 1px #7B858D;
+}
+
+
+
+
+/* Container 2 */
+.container-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--green_1);
+}
+
+/* SECOND SECTION */
+.second{
+    display: flex;
+    width: 85%;
+    padding: 50px 0px;
+}
+/* Second left section */
+.second-left{
+    width:40%
+}
+/* second left section image */
+.second .second-left .image-container img{
+    width: 100%;
+    height: 343px;
+    transition: all 0.6s;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+/* Shadow on hovering the image */
+.second .second-left .image-container img:hover{
+    box-shadow: 5px 5px 7px 1px #7d7d7d;
+}
+
+/* Secnd right section */
+.second-right{
+    width:60%
+}
+/* Secnd right section heading*/
+.second .second-right .heading-1{
+    font-size: 31px;
+    margin: 0px 0px 0px 20px;
+}
+/* Secnd right section paragraphs*/
+.second .second-right .para-1, 
+.second .second-right .para-2{
+    color: var(--nav_black);
+    font-size: 15px;
+    margin: 10px 0px 10px 20px;
+    line-height: 20px;
+}
+/* Second Button*/
+.btn-2{
+    background-color: var(--green_2);
+    margin: 0px 0px 0px 20px;
+}
+/* Second arrow */
+.arrow-2{
+    opacity: 0%;
+    transition: all 0.6s;
+    position: absolute;
+    transform: translateX(-3px);
+}
+/* Animate arrow on hoverng */
+.btn-2:hover .arrow-2{
+    transform: translateX(4px);
+    opacity: 100%;
+}
+/* Change background on hovering */
+.btn-2:hover{
+    background-color: var(--green_4);
+}
+
+
+/* CONTAINER 3 */
+
+.container-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+/* THIRD SECTION */
+.third{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0px 10px
+}
+/* Cards */
+.cards{
+    width: 155px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/* Card icons */
+.icons{
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    transition: all 1s;
+}
+/* Card titles */
+.titles{
+    font-size: 19px;
+    margin: 10px 0px 10px 0px;
+    transition: all 0.5s;
+}
+/* Card descriptions */
+.descriptions{
+    font-size: 15px;
+    color: var(--grey);
+    margin: 0px 0px 0px 0px;
+    transition: all 0.5s;
+}
+/* Card 1 icon color */
+.icon-1{
+    color: var(--pink);
+}
+/* Card 2 icon color */
+.icon-2{
+    color: var(--green_3);
+}
+/* Card 3 icon color */
+.icon-3{
+    color: var(--yellow);
+}
+/* Card 4 icon color */
+.icon-4{
+    color: var(--blue_2);
+}
+/* Card 5 icon color */
+.icon-5{
+    color: var(--grey);
+}
+
+/* Card 1 */
+/* Effect on Card on hovering Card */
+.card-1:hover{
+    background-color: var(--pink);
+    border-color: var(--pink);
+    transform: scale(1.06);
+}
+/* Effect on icon on hovering Card */
+.card-1:hover .icon-1{
+    background-color: white;
+    color: var(--pink);
+    border-color: white;
+    transform: rotate(360deg);
+}
+/* Effect on description on hovering Card */
+.card-1:hover .description-1, .card-1:hover .title-1{
+    color: white;
+}
+
+/* Card 2 */
+/* Effect on Card on hovering Card */
+.card-2:hover{
+    background-color: var(--green_3);
+    border-color: var(--green_3);
+    transform: scale(1.06);
+}
+/* Effect on icon on hovering Card */
+.card-2:hover .icon-2{
+    background-color: white;
+    color: var(--green_3);
+    border-color: white;
+    transform: rotate(360deg);
+}
+/* Effect on description on hovering Card */
+.card-2:hover .description-2, .card-2:hover .title-2{
+    color: white;
+}
+
+/* Card 3 */
+/* Effect on Card on hovering Card */
+.card-3:hover{
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    transform: scale(1.06);
+}
+/* Effect on icon on hovering Card */
+.card-3:hover .icon-3{
+    background-color: white;
+    color: var(--yellow);
+    border-color: white;
+    transform: rotate(360deg);
+}
+/* Effect on description on hovering Card */
+.card-3:hover .description-3, .card-3:hover .title-3{
+    color: white;
+}
+
+/* Card 4 */
+/* Effect on Card on hovering Card */
+.card-4:hover{
+    background-color: var(--blue_2);
+    border-color: var(--blue_2);
+    transform: scale(1.06);
+}
+/* Effect on icon on hovering Card */
+.card-4:hover .icon-4{
+    background-color: white;
+    color: var(--blue_2);
+    border-color: white;
+    transform: rotate(360deg);
+}
+/* Effect on description on hovering Card */
+.card-4:hover .description-4, .card-4:hover .title-4{
+    color: white;
+}
+
+/* Card 5 */
+/* Effect on Card on hovering Card */
+.card-5:hover{
+    background-color: var(--grey);
+    border-color: var(--grey);
+    transform: scale(1.06);
+}
+/* Effect on icon on hovering Card */
+.card-5:hover .icon-5{
+    background-color: white;
+    border-color: white;
+    color: var(--grey);
+    transform: rotate(360deg);
+}
+/* Effect on description on hovering Card */
+.card-5:hover .description-5, .card-5:hover .title-5{
+    color: white;
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--grey);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+/* footer sub-sections */
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+/* footer sub-section 1 */
+.footer-section-1{
+    color: white;
+}
+/* git icon */
+.git-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* copysight icon size */
+.copyright{
+    font-size: 15px;
+}
+/* copyright text size */
+.footer-section-1 p{
+    font-size: 13px;
+}
+/* footer section headings */
+.footer-heading{
+    color: white;
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+}
+/* footer links */
+.footer-link{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    font-size: 15px;
+    margin: 4px 0px;
+}
+/* footer links on hover */
+.footer-link:hover{
+    color: white;
+}
+
+
+/* CSS For Responsiveness */
+
+/* CSS for small laptop and tablet (landscape) screens */
+@media only screen and (max-width:1025px){
+    /* Increasing the width and gap of card container */
+    .third{
+        width: 90%;
+        gap: 13px;
+    }
+    /* Increasing the width and decreasing the height od the cards */
+    .cards{
+        width: 200px;
+        height: 180px;
+    }
+
+}
+/* CSS for Tablet (portrait) screen*/
+@media only screen and (max-width:959px){
+    /* reducing font sizes */
+    .nav-link{
+        font-size: 13px;
+    }
+    .first .first-left .heading-1{
+        font-size: 23px;
+    }
+    .first .first-left .para-1,
+    .first .first-left .para-2,
+    .second .second-right .para-1,
+    .second .second-right .para-2{
+        font-size: 13px;
+    }
+    .second .second-right .heading-1{
+        font-size: 23px;
+    }
+    
+    /* Increasing the width of cards */
+    .cards{
+        width: 285px;
+    }
+    /* Decreasing font sizes */
+    .titles{
+        font-size: 17px;
+    }
+    .descriptions{
+        font-size: 12px;
+    }
+    .footer-heading,
+    .git-link{
+        font-size: 15px;
+    }
+    .footer-link{
+        font-size: 12px;
+    }
+    .footer-section-1 p{
+        font-size: 12px;
+    }
+
+}
+/* CSS for decreasing the width of the cards */
+@media only screen and (max-width:700px){
+    .cards{
+        width: 210px;
+    }
+}
+/* CSS for mobile screen */
+@media only screen and (max-width:480px){
+    /* NAV */
+    .nav{
+        width: 95%;
+    }
+    .nav ul{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-links{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+    }
+    .nav ul .logo-menu{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .show-menu{
+        display: inline-block;
+    }
+    /* First Section */
+    .first{
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+    .first-right{
+        width: 100%;
+    }
+    .first .first-right .image-container img{
+        height: 230px;
+    }
+    .first-left{
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .first .first-left .para-1, 
+    .first .first-left .para-2{
+        margin: 10px 0px;
+    }
+    /* Second section */
+    .second{
+        flex-direction: column;
+        width: 95%;
+    }
+    .second-right{
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .second .second-right .heading-1{
+        margin: 0px;
+    }
+    .second .second-right .para-1, 
+    .second .second-right .para-2{
+        margin: 10px 0px;
+    }
+    .second .second-left .image-container img{
+        height: 230px;
+    }
+    .btn-2{
+        margin: 0px;
+    }
+    .second-left{
+        width: 100%;
+    }
+    /* Cards*/
+    .cards{
+        width: 95%;
+    }
+    /* Footer */
+    .footer{
+        flex-direction: column;
+    }
+    .footer-heading{
+        margin-top: 20px;
+    }
+    .footer-link{
+        width: fit-content;
+    }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Assignment 5 - CSS</title>
+        <link rel="stylesheet" href="assignment_5_style.css">
+        <script src="assignment_5_script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <!-- Nav bar -->
+            <nav class="nav">
+                <ul>
+                    <!-- Logo , menu btn and close btn -->
+                    <li class="logo-menu">
+                        <!-- Logo -->
+                        <a class="nav-logo" href="#">
+                            <i class="fa-solid fa-robot"></i>
+                        </a>
+                        <!-- menu btn -->
+                        <button class="show-menu" id="show-menu" onclick="toggleNav()">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- close btn -->
+                        <button class="close-menu" id="close-menu" onclick="toggleNav()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                    <!-- Nav links -->
+                    <div class="nav-links" id="nav-links">
+                        <li>
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#pages">Pages</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <!-- First container -->
+        <section class="container-1">
+            <section class="first">
+                <!-- First left section -->
+                <article class="first-left">
+                    <!-- Heading -->
+                    <p class="heading-1">
+                        What is Lorem Ipsum?
+                    </p>
+                    <!-- Paragraph  1 -->
+                    <p class="para-1">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <!-- Paragraph  2 -->
+                    <p class="para-2">
+                        Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden- Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    </p>
+                    <!-- Button -->
+                    <button class="btn btn-1">
+                        Learn More 
+                        <span class="arrow-1">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </span>
+                    </button>
+                </article>
+                <!-- Right section -->
+                <aside class="first-right">
+                    <div class="image-container">
+                        <img src="img-1.jpg" alt="Image 1">
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!-- Second Container -->
+        <section class="container-2">
+            <section class="second">
+                <!-- Left section -->
+                <aside class="second-left">
+                    <div class="image-container">
+                        <img src="img-2.jpeg" alt="Image 2">
+                    </div>
+                </aside>
+                <!-- Right section -->
+                <article class="second-right">
+                    <!-- Heading -->
+                    <p class="heading-1">
+                        What is Lorem Ipsum?
+                    </p>
+                    <!-- Pagagraph 1 -->
+                    <p class="para-1">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <!-- Pagagraph 2 -->
+                    <p class="para-2">
+                        Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden- Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    </p>
+                    <!-- Button -->
+                    <button class="btn btn-2">
+                        Learn More 
+                        <span class="arrow-2">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </span>
+                    </button>
+                </article>
+            </section>
+        </section>
+        <!-- Third Container -->
+        <section class="container-3">
+            <!-- Cards container -->
+            <section class="third">
+                <!-- Card 1 -->
+                <article class="cards card-1">
+                    <!-- card icon -->
+                    <div class="icons icon-1">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <!-- card title -->
+                    <div class="titles title-1">
+                        Music
+                    </div>
+                    <!-- card description -->
+                    <div class="descriptions description-1">
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </div>
+                </article>
+                
+                <!-- Card 2 -->
+                <article class="cards card-2">
+                    <!-- card icon -->
+                    <div class="icons icon-2">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <!-- card title -->
+                    <div class="titles title-2">
+                        Downloads
+                    </div>
+                    <!-- card description -->
+                    <div class="descriptions description-2">
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </div>
+                </article>
+                
+                <!-- Card 3 -->
+                <article class="cards card-3">
+                    <!-- card icon -->
+                    <div class="icons icon-3">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <!-- card title -->
+                    <div class="titles title-3">
+                        Pictures
+                    </div>
+                    <!-- card description -->
+                    <div class="descriptions description-3">
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </div>
+                </article>
+                
+                <!-- Card 4 -->
+                <article class="cards card-4">
+                    <!-- card icon -->
+                    <div class="icons icon-4">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <!-- card title -->
+                    <div class="titles title-4">
+                        Connect
+                    </div>
+                    <!-- card description -->
+                    <div class="descriptions description-4">
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </div>
+                </article>
+                
+                <!-- Card 5 -->
+                <article class="cards card-5">
+                    <!-- card icon -->
+                    <div class="icons icon-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <!-- card title -->
+                    <div class="titles title-5">
+                        Location
+                    </div>
+                    <!-- card description -->
+                    <div class="descriptions description-5">
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- section 1 -->
+            <section class="footer-section footer-section-1">
+                <a href="#" class="git-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <p><span class="copyright">&copy;</span> 2017&minus;2022</p>
+            </section>
+            <!-- section 2 -->
+            <section class="footer-section footer-section-2">
+                <p class="footer-heading">
+                    Features
+                </p>
+                <a href="#" class="footer-link">Cool stuff</a>
+                <a href="#" class="footer-link">Random feature</a>
+                <a href="#" class="footer-link">Team feature</a>
+                <a href="#" class="footer-link">Stuff for developers</a>
+                <a href="#" class="footer-link">Another one</a>
+                <a href="#" class="footer-link">Last time</a>
+            </section>
+            <!-- section 3 -->
+            <section class="footer-section footer-section-3">
+                <p class="footer-heading">
+                    Resources
+                </p>
+                <a href="#" class="footer-link">Resource</a>
+                <a href="#" class="footer-link">Resource name</a>
+                <a href="#" class="footer-link">Another resource</a>
+                <a href="#" class="footer-link">Final resource</a>
+            </section>
+            <!-- section 4 -->
+            <section class="footer-section footer-section-4">
+                <p class="footer-heading">
+                    About
+                </p>
+                <a href="#" class="footer-link">Team</a>
+                <a href="#" class="footer-link">Locations</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+            </section>
+        </footer>  
+    </body>
+</html>
